@@ -1,0 +1,13 @@
+{
+  "name": "space-ghost",
+  "version": "0.0.1",
+  "description": "Lightweight CLI to run Meteor 1.3 tests",
+  "author": "Dispatch",
+  "bin": {
+    "spaceghost": "spaceghost.js"
+  },
+  "dependencies": {
+    "phantomjs-prebuilt": "^2.1.4"
+  },
+  "devDependencies": {}
+}
