@@ -12,7 +12,6 @@ page.onError = function(msg, trace) {
   mochaIsRunning = page.evaluate(function() {
     return window.mochaIsRunning;
   });
-  console.log('ERROR MOCHA IS RUNNING', mochaIsRunning);
   if (mochaIsRunning) return;
   console.log(msg);
   trace.forEach(function(item) {

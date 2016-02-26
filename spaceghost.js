@@ -6,7 +6,7 @@ var phantomjs = require('phantomjs-prebuilt');
 
 var meteorProcess = childProcess.spawn('meteor', [
   'test-app'
-].concat(process.argv.slice(1)), {
+].concat(process.argv.slice(2)), {
   env: process.env
 });
 
