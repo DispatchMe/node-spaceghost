@@ -5,13 +5,20 @@ var childProcess = require('child_process');
 var phantomjs = require('phantomjs-prebuilt');
 
 var meteorProcess = childProcess.spawn('meteor', [
-  'test-app'
+  'test-app',
+
+  // --once prevents Meteor from endlessly restarting the server code if it throws an error
+  '--once'
 ].concat(process.argv.slice(2)), {
   env: process.env
 });
 
 meteorProcess.on('error', function (error) {
   throw error;
+});
+
+meteorProcess.on('exit', function (code) {
+  process.exit(code);
 });
 
 meteorProcess.stdout.on('data', function(data) {
