@@ -9,7 +9,7 @@ This is similar to [spacejam](https://www.npmjs.com/package/spacejam) and took a
 In a Meteor 1.3+ app directory:
 
 ```bash
-npm i --save-dev https://github.com/DispatchMe/node-spaceghost/tarball/aa09f9582cafef60e04edbb016e3b4256d6aec28
+npm i --save-dev https://github.com/DispatchMe/node-spaceghost/tarball/b9a2748ca0d70ec3b056e8f95f0765152f283309
 ```
 
 ## Setup
@@ -20,7 +20,7 @@ NOTE: Currently you also have to use a custom avital:mocha package, probably jus
 ```
 "avital:mocha": {
   "git": "git@github.com:aldeed/meteor-mocha-for-1.3.git",
-  "version": "365f3f36c1cfab9b81f6838a4ed776d5a112afc8"
+  "version": "a4504bdd6fa5a0ef464667298a34e57213e89437"
 }
 ```
 
