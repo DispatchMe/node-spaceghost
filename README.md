@@ -9,23 +9,12 @@ This is similar to [spacejam](https://www.npmjs.com/package/spacejam) and took a
 In a Meteor 1.3+ app directory:
 
 ```bash
-npm i --save-dev space-ghost
+npm i --save-dev https://github.com/DispatchMe/node-spaceghost/tarball/aa09f9582cafef60e04edbb016e3b4256d6aec28
 ```
 
-## Usage
+## Setup
 
-Basically just replace `meteor test-app` with `space-ghost` in an npm script. Example:
-
-```json
-{
-  "scripts": {
-    "test": "ENV=dev spaceghost --unit"
-  }
-}
-```
-
-And then run them with: `npm test`
-
+### Add mocha package with console reporter
 NOTE: Currently you also have to use a custom avital:mocha package, probably just until the next Meteor 1.3 beta release:
 
 ```
@@ -36,3 +25,21 @@ NOTE: Currently you also have to use a custom avital:mocha package, probably jus
 ```
 
 Install with `mgp` and `meteor add avital:mocha`.
+
+### Define your npm test script
+
+Basically just replace `meteor test-app` with `spaceghost` in an npm script. Example:
+
+```json
+{
+  "scripts": {
+    "test": "ENV=dev spaceghost --unit"
+  }
+}
+```
+
+## Run app tests
+
+```bash
+npm test
+```
