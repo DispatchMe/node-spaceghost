@@ -9,7 +9,7 @@ This is similar to [spacejam](https://www.npmjs.com/package/spacejam) and took a
 In a Meteor 1.3+ app directory:
 
 ```bash
-npm i --save-dev https://github.com/DispatchMe/node-spaceghost/tarball/b9a2748ca0d70ec3b056e8f95f0765152f283309
+npm i --save-dev https://github.com/DispatchMe/node-spaceghost/tarball/ec02a1830d2f44c7b218896dc8e18874fec2b386
 ```
 
 ## Setup
