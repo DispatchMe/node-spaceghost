@@ -28,12 +28,13 @@ Install with `mgp` and `meteor add avital:mocha`.
 
 ### Define your npm test script
 
-Basically just replace `meteor test-app` with `spaceghost` in an npm script. Example:
+Basically just replace `meteor test` with `spaceghost` in an npm script. Example:
 
 ```json
 {
   "scripts": {
-    "test": "ENV=dev spaceghost --unit"
+    "test": "ENV=dev spaceghost --driver-package avital:mocha",
+    "test:integration": "ENV=dev spaceghost --driver-package avital:mocha --full-app"
   }
 }
 ```

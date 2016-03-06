@@ -5,7 +5,7 @@ var childProcess = require('child_process');
 var phantomjs = require('phantomjs-prebuilt');
 
 var meteorProcess = childProcess.spawn('meteor', [
-  'test-app',
+  'test',
 
   // --once prevents Meteor from endlessly restarting the server code if it throws an error
   '--once'
